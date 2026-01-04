@@ -6,13 +6,6 @@ public class CellPhone extends Product {
 
     private int simCount;
 
-    public int getSimCount(){
-        return simCount;
-    }
-    public void setSimcount(int simCount){
-        this.simCount = simCount;
-    }
-
     public CellPhone(){
         
     }
@@ -21,6 +14,14 @@ public class CellPhone extends Product {
         super(id, price, name);
         this.simCount = simCount;
     }
+    
+    public int getSimCount(){
+        return simCount;
+    }
+    public void setSimcount(int simCount){
+        this.simCount = simCount;
+    }
+
     @Override
     public void showProduct() {
         super.showProduct();
