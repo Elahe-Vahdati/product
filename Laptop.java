@@ -13,6 +13,10 @@ public class Laptop extends Product {
         this.cpuType = cputype;
     }
 
+     public Laptop(){
+         
+     }
+
     public Laptop(int id, BigDecimal price, String brand, String cpuType){
         super(id, price, brand);
         this.cpuType = cpuType;
