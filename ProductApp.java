@@ -27,14 +27,7 @@ public class ProductApp {
             int choice = sc.nextInt();
             switch (choice){
                 case 1 ->{
-                    System.out.println("Enter Product ID");
-                    int id = sc.nextInt();
-                    sc.nextLine();
-                    System.out.println("Enter Brand Name");
-                    String brand = sc.nextLine();
-                    System.out.println("Enter Product Price");
-                    BigDecimal price = sc.nextBigDecimal();
-                    sc.nextLine();
+                    Product product = productEntery();
                     System.out.println("Enter sim count");
                     int simCount = sc.nextInt();
                     products.add(new CellPhone(id, price, brand, simCount));
@@ -42,14 +35,7 @@ public class ProductApp {
                 }
 
                 case 2 ->{
-                    System.out.println("Enter Product ID");
-                    int id = sc.nextInt();
-                    sc.nextLine();
-                    System.out.println("Enter Brand Name");
-                    String brand = sc.nextLine();
-                    System.out.println("Enter Product Price");
-                    BigDecimal price = sc.nextBigDecimal();
-                    sc.nextLine();
+                    Product product = productEntery();
                     System.out.println("Enter cpu type");
                     String cpuType = sc.nextLine();
                     products.add(new Laptop(id, price, brand, cpuType));
@@ -82,4 +68,15 @@ public class ProductApp {
             }
         }
     }
+
+    private Product productEntery(){
+        System.out.println("Enter Product ID");
+        int id = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter Brand Name");
+        String brand = sc.nextLine();
+        System.out.println("Enter Product Price");
+        BigDecimal price = sc.nextBigDecimal();
+        sc.nextLine();
+}
 }
