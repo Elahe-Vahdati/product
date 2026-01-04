@@ -5,14 +5,6 @@ import java.math.BigDecimal;
 public class Laptop extends Product {
     private String cpuType;
 
-    public String getCpuType(){
-        return cpuType;
-    }
-
-    public void setCputype(String cpuType){
-        this.cpuType = cputype;
-    }
-
      public Laptop(){
          
      }
@@ -21,6 +13,15 @@ public class Laptop extends Product {
         super(id, price, brand);
         this.cpuType = cpuType;
     }
+    
+        public String getCpuType(){
+        return cpuType;
+    }
+
+    public void setCputype(String cpuType){
+        this.cpuType = cputype;
+    }
+  
     @Override
     public void showProduct(){
         super.showProduct();
