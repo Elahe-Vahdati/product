@@ -13,6 +13,10 @@ public class CellPhone extends Product {
         this.simCount = simCount;
     }
 
+    public CellPhone(){
+        
+    }
+
     public CellPhone(int id, BigDecimal price, String name, int simCount) {
         super(id, price, name);
         this.simCount = simCount;
